@@ -27,7 +27,7 @@ const DashboardPage = () => {
 
         <section className="section dashboard">
         
-        <div style= {{width: '150%'}} className="container-fluid">
+        <div style= {{width: '100%'}} className="container-fluid">
           <div className="row">
             {/* Left side */}
             <div className="col-lg-8 col-md-12">
@@ -35,7 +35,7 @@ const DashboardPage = () => {
                 {/* Sales Card */}
                 {/* <div className="section-card"> */}
                 
-                <div className="col-xxl-4 col-md-6">
+                <div style= {{width: '50%'}} className="col-xxl-4 col-md-6">
                   <div className="card info-card sales-card">
                     <div className="filter">
                       <a className="icon" href="#" data-bs-toggle="dropdown">
@@ -65,7 +65,7 @@ const DashboardPage = () => {
                 </div>
 
                 {/* Revenue Card */}
-                <div className="col-xxl-4 col-md-6">
+                <div style= {{width: '50%'}} className="col-xxl-4 col-md-6">
                   <div className="card info-card revenue-card">
                     <div className="filter">
                       <a className="icon" href="#" data-bs-toggle="dropdown">
@@ -98,7 +98,7 @@ const DashboardPage = () => {
                 
 
                 {/* Customers Card */}
-                <div className="col-xxl-4 col-xl-12">
+                <div style= {{width: '100%'}} className="col-xxl-4 col-xl-12">
                   <div className="card info-card customers-card">
                     <div className="filter">
                       <a className="icon" href="#" data-bs-toggle="dropdown">
@@ -149,6 +149,10 @@ const DashboardPage = () => {
 
               </div>
             </div>
+            {/* Right side */}
+        <div className="col-lg-4 col-md-12">
+         <WebsiteTraffic />
+        </div>
             <div className="row">
       {/* Colonne avec l'historique */}
       <div className="col-lg-12 col-md-12">
@@ -157,10 +161,7 @@ const DashboardPage = () => {
     </div>
     </div>
      
-          {/* Right side */}
-        <div className="col-lg-4 col-md-12">
-         <WebsiteTraffic />
-        </div>
+          
     </div>
 
             {/* Right side */}
